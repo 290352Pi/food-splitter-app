@@ -1,0 +1,170 @@
+/* CSS: เน้นความสะอาด สบายตา และใช้งานง่ายบนมือถือ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9eef7;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #007bff;
+}
+.section {
+    background-color: #f7f9fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.input-group input:nth-child(1) { flex-grow: 3; }
+.input-group input:nth-child(2) { flex-grow: 1; width: 80px; }
+.input-group input:nth-child(3) { flex-grow: 2; width: 100px; }
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-right: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.list-item:last-child {
+    border-bottom: none;
+}
+.list-item .delete-btn {
+    background: none;
+    color: #dc3545;
+    padding: 5px;
+    width: auto;
+    font-weight: bold;
+}
+.list-item .delete-btn:hover {
+    color: #c82333;
+    background-color: #f8d7da;
+}
+.item-details {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+.item-details strong {
+    font-size: 1.1em;
+}
+.participants-checkboxes {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    margin-top: 5px;
+}
+.participants-checkboxes label {
+    margin-right: 15px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+.summary, .history {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px dashed #007bff;
+}
+.summary p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.summary p strong {
+    color: #28a745;
+    font-size: 1.2em;
+}
+
+/* สไตล์สำหรับประวัติ */
+.history-record {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.history-record h4 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    font-size: 1em;
+}
+.history-record ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 0.9em;
+}
+.history-record li {
+    padding: 2px 0;
+    color: #555;
+}
+.history-record li::before {
+    content: "•";
+    color: #28a745;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.history-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+.history-actions button {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+.history-actions .edit-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+.history-actions .edit-btn:hover {
+    background-color: #e0a800;
+}
+.history-actions .delete-btn-hist {
+    background-color: #dc3545;
+}
+.history-actions .delete-btn-hist:hover {
+    background-color: #c82333;
+}

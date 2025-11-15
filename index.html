@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณหารค่าอาหาร (แยกไฟล์)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>💰 หารบิลสุดง่าย (แก้ไขประวัติได้)</h2>
+
+        <div class="section">
+            <h3>👥 เพื่อนร่วมโต๊ะ</h3>
+            <div class="input-group">
+                <input type="text" id="friendName" placeholder="ใส่ชื่อเพื่อนทีละคน">
+                <button onclick="addFriend()" style="width: auto;">+ เพิ่ม</button>
+            </div>
+            <div id="friendListContainer">
+                </div>
+        </div>
+
+        <div class="section">
+            <h3>🍜 รายการอาหาร</h3>
+            <div class="input-group">
+                <input type="text" id="foodName" placeholder="ชื่อเมนู">
+                <input type="number" id="foodQuantity" placeholder="จำนวน" min="1" value="1" style="width: 80px;">
+                <input type="number" id="foodPrice" placeholder="ราคา/จาน" min="0" style="width: 100px;">
+                <button onclick="addFoodItem()" style="width: auto;">+ เพิ่ม</button>
+            </div>
+            <div id="foodItemListContainer">
+                </div>
+        </div>
+
+        <hr style="border: none; border-top: 2px solid #ccc; margin: 20px 0;">
+
+        <button onclick="calculateSplit()">✨ คำนวณยอดที่ต้องจ่ายและบันทึก</button>
+
+        <div class="summary">
+            <h3>สรุปผลล่าสุด</h3>
+            <div id="summaryOutput">
+                <p>กรุณาเพิ่มเพื่อนและรายการอาหาร แล้วกดปุ่มคำนวณ</p>
+            </div>
+        </div>
+        
+        <div class="history">
+            <h3>📜 ประวัติการหารบิล</h3>
+            <div id="historyListContainer">
+                <p style="color:#6c757d;">ยังไม่มีการบันทึกสรุปยอด</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
